@@ -1,6 +1,5 @@
 import React from 'react';
 import './header.scss';
-import { GoDotFill } from 'react-icons/go';
 import HeroImg from './../../assets/Images/HeroImg.png';
 import Element1 from './../../assets/Images/js.png';
 import Element2 from './../../assets/Images/hero-shape-2.png';
@@ -20,11 +19,11 @@ const Header = () => {
           <h1 className="text-orange-500 pt-8">I'm Beyza Keser</h1>
           <div className="flex flex-col pt-8 gap-2">
             <span className="flex items-center">
-              <GoDotFill />
+             
               Full Stack Developer
             </span>
             <span className="flex items-center">
-              <GoDotFill />
+             
               React Developer
             </span>
           </div>

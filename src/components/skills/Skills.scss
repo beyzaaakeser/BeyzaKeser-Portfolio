@@ -1,0 +1,22 @@
+.skillWrapper {
+  background-color: var(--bg-color-header) !important;
+  color: var(--text-color);
+  border-top: 0.2px solid rgba(131, 131, 131, 0.5);
+  border-bottom: 0.2px solid rgba(131, 131, 131, 0.5);
+    
+  .skillTopContainer {
+    text-align: center;
+    
+  }
+
+  .skill-card {
+    transition: transform 0.3s;
+   
+  }
+  
+}
+
+.skillWrapper > div > div{
+    width: 100%;
+    margin-left: 20px;
+}
