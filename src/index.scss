@@ -13,16 +13,19 @@
   user-select: none;
 }
 
-:root{
-  --text-color:#ffff;
-
+:root {
+  --text-color: #ffff;
+  --bg-color-header: #1a2813;
+  --bg-color-header-2: #361723;
 }
 
-.DarkTheme{
-  --text-color:#000;
+[data-theme= "light" ] {
+  --text-color: #000;
+  --bg-color-header: #e8e8e8;
+  --bg-color-header-2: #ffffff;
 }
 
-.section{
+.section {
   width: 100%;
   display: flex;
   flex-direction: column;

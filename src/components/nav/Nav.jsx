@@ -8,9 +8,11 @@ import './nav.scss';
 const Nav = () => {
   let menu = useRef();
   const ShowMenu = () => {
-    console.log('tıklandı');
     menu.current.classList.toggle('showMenu');
   };
+
+
+
   return (
     <>
       <div className="nav">

@@ -1,10 +1,38 @@
 import React from 'react';
 
 const NavThemeSwitcher = () => {
+  const DarkTheme = () => {
+    document.querySelector('body').setAttribute('data-theme', 'dark');
+  };
+
+  const LightTheme = () => {
+    document.querySelector('body').setAttribute('data-theme', 'light');
+  };
+
+  const toggleTheme = () => {
+    const body = document.querySelector('body');
+    const currentTheme = body.getAttribute('data-theme');
+
+    if (currentTheme == 'null') {
+      DarkTheme();
+    }
+
+    if (currentTheme === 'light') {
+      DarkTheme();
+    } else {
+      LightTheme();
+    }
+  };
+
   return (
     <div className="flex">
       <label className="inline-flex items-center relative cursor-pointer">
-        <input className="peer hidden" id="toggle" type="checkbox" />
+        <input
+          className="peer hidden"
+          id="toggle"
+          type="checkbox"
+          onClick={toggleTheme}
+        />
         <div className="relative w-[66px] h-[30px] bg-white peer-checked:bg-zinc-500 rounded-full after:absolute after:content-[''] after:w-[24px] after:h-[24px] after:bg-gradient-to-r from-orange-500 to-yellow-400 peer-checked:after:from-zinc-900 peer-checked:after:to-zinc-900 after:rounded-full after:top-[3px] after:left-[3px] active:after:w-[30px] peer-checked:after:left-[63px] peer-checked:after:translate-x-[-100%] shadow-sm duration-300 after:duration-300 after:shadow-md"></div>
         <svg
           height="0"
